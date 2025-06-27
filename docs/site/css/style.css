@@ -1,0 +1,304 @@
+/* Базовая стилистика */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eef2f6;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #1e3a8a;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Фоновая картинка с блюром */
+.hero-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../image/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+  image-rendering: pixelated;
+}
+
+/* Единая шапка */
+.alt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1rem 2rem;
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 10;
+}
+
+.alt-header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.alt-header nav a {
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+.logo-left img,
+.mp-logo img {
+  height: 50px;
+}
+
+/* Главный экран */
+.hero-content {
+  text-align: center;
+  padding: 6rem 1rem 3rem;
+  position: relative;
+  z-index: 1;
+  color: #1e3a8a;
+}
+
+.hero-logo {
+  height: 180px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin: 0.2em 0;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  display: inline-block;
+}
+
+/* Секция информации и контент */
+.info,
+.page-content {
+  padding: 2rem;
+  max-width: 960px;
+  margin: 2rem auto;
+  background-color: rgba(255, 255, 255, 0.685);
+  border-radius: 12px;
+  backdrop-filter: blur(3px);
+  position: relative;
+  z-index: 1;
+  color: #1e293b;
+}
+
+/* Нижний футер */
+.dark-footer {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-logo {
+    height: 100px;
+  }
+
+  .alt-header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .info, .page-content {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.sticky-footer {
+  margin-top: auto;
+}
+
+.team-section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.team-section h2 {
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+.team-section ul {
+  padding-left: 1.2rem;
+}
+
+.team-section ul li {
+  margin-bottom: 0.4rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.team-card {
+  background-color: rgba(255, 255, 255, 0.685);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-3px);
+}
+
+.team-card h2 {
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+.team-card ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.team-card li {
+  margin-bottom: 0.5rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.page-heading {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto 0;
+  background-color: rgba(255, 255, 255, 0.685);
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
+
+.page-heading h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin: 0;
+}
+
+.figma-screens {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.figma-screens img {
+  width: 30%;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.figma-screens img:hover {
+  transform: scale(1.03);
+}
+
+/* Адаптив под мобилку */
+@media (max-width: 768px) {
+  .figma-screens img {
+    width: 100%;
+  }
+}
+
+.timeline-entry {
+  background-color: rgba(255, 255, 255, 0.685);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 960px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.timeline-entry:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.timeline-entry h3 {
+  color: #1e3a8a;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-entry p {
+  font-size: 1rem;
+  color: #1e293b;
+  margin: 0;
+}

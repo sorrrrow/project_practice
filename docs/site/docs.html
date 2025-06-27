@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Руководство — Персик-сервер</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="hero-bg"></div>
+
+  <header class="alt-header">
+    <div class="logo-left">
+      <img src="image/per-logo.png" alt="Персик Logo" />
+    </div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="about.html">О проекте</a>
+      <a href="team.html">Участники</a>
+      <a href="log.html">Журнал</a>
+      <a href="resources.html">Ресурсы</a>
+      <a href="pers.html">Вариативная часть</a>
+    </nav>
+    <div class="mp-logo">
+      <img src="image/politech.png" alt="Московский Политех" />
+    </div>
+  </header>
+
+  <main>
+    <section class="page-heading">
+      <h1>Руководство по запуску проекта</h1>
+    </section>
+
+    <section class="page-content">
+      <h2>1. Установка и подготовка</h2>
+      <ul>
+        <li>Убедитесь, что установлен Python 3.7+</li>
+        <li>Создайте структуру проекта вручную или склонируйте из Git:</li>
+      </ul>
+      <pre><code>├── webserver.py
+├── index.html
+├── about.html
+├── game.html
+├── js/
+│   └── cat_snake.js
+├── css/
+│   └── style.css
+├── images/
+    └── картинки, фон и иконки</code></pre>
+
+      <h2>2. Запуск сервера</h2>
+      <pre><code>python webserver.py</code></pre>
+      <p>После запуска откройте <strong>http://127.0.0.1:8080</strong> в браузере.</p>
+
+      <h2>3. Навигация по сайту</h2>
+      <ul>
+        <li><code>/</code> — главная страница с описанием</li>
+        <li><code>/about.html</code> — история и факты</li>
+        <li><code>/game.html</code> — игра "Персик-змейка"</li>
+      </ul>
+
+      <h2>4. Состав проекта</h2>
+      <ul>
+        <li><strong>HTML:</strong> Три страницы + игра</li>
+        <li><strong>CSS:</strong> Единый стиль оформления</li>
+        <li><strong>JS:</strong> Логика игры и анимации</li>
+        <li><strong>Python:</strong> Обработка маршрутов и файлов</li>
+      </ul>
+
+      <h2>5. Рекомендации</h2>
+      <ul>
+        <li>Изображения помещайте в папку <code>images/</code></li>
+        <li>Файл <code>webserver.py</code> должен запускаться из корня</li>
+        <li>Игра работает через canvas — проверьте поддержку JS в браузере</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="dark-footer sticky-footer">
+    <p>© 2025 Проект "Персик-сервер" — руководство пользователя</p>
+  </footer>
+</body>
+</html>
