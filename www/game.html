@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>КОТОЗМЕЙКА</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <h1>КОТОЗМЕЙКА</h1>
+      <p>Чтобы накормить котика, наберите <strong>20 очков</strong>.</p>
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <div id="game-message" class="hidden">
+        <p id="message-text"></p>
+        <button onclick="restartGame()">Играть заново</button>
+      </div>
+
+      <p id="score">Очки: 0</p>
+      <a href="/about.html">Назад</a>
+    </div>
+    <script src="js/cat_snake.js"></script>
+  </body>
+</html>
